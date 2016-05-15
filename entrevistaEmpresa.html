@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="nofollow">
+		<meta name="author" content="Carlos Marin">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="./main.css">
+		<link rel="icon" href="./img/favicon.png">
+		<title>Tutor | Entrevista Empresa </title>
+	</head>
+	<body>
+		<!-- NavBar Header -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+		    	<div class="navbar-header">
+		    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand">UIB Convenis</a>
+					<a href="index.html"><img id="logoNav" src="./img/favicon.png" alt="UIB logo"/></a>
+		    	</div>
+
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Convenis</a></li>
+						<li><a href="#">Empreses</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Perfil</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Cercar..."></input>
+						</div>
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Cercar</button>
+					</form>
+
+				</div>
+		  	</div>
+		</nav>
+		<!-- END NavBar Header -->
+
+		<!-- Panel Crear Conveni -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+					<div class="panel panel-info">
+						<div class="panel-heading"><big>Entrevista personal Empresa</big><small></small></div>
+						<div class="panel-body">
+							<label>Conveni: </label><p>Conveni Enginyer de Software Junior</p>
+							<form class="form-horizontal">
+								<fieldset>
+									<legend>Dades del conveni <a id="showConveni" class="small-font">mostrar informació</a></legend>
+									<div id="dadesConveni">
+										<div class="form-group">
+											<label for="inputNomBecari" class="col-md-3 col-md-offset-1 control-label">Nom del becari / de la becària</label>
+											<div class="col-md-5">
+												<input type="text" class="form-control" id="inputNomBecari" placeholder="Carlos Marin" readonly></input>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputEmail" class="col-md-3 col-md-offset-1 control-label">Email</label>
+											<div class="col-md-4 col-xs-5 input-group">
+												<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+									      		<input type="email" class="form-control" id="inputEmail" placeholder="carlosmarin@uib.es" readonly></input>
+										    </div>
+										</div>
+										<br>
+										<div class="form-group">
+											<label for="inputNomEmpresa" class="col-md-3 col-md-offset-1 control-label">Nom de la empresa</label>
+											<div class="col-md-3 col-xs-5">
+									      		<input type="text" class="form-control" id="inputNomEmpresa" placeholder="UIB" readonly></input>
+										    </div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputEmpresaTutorNom" class="col-md-3 col-md-offset-1 control-label">Tutor de l'empresa</label>
+											<div class="col-md-4">
+												<input type="text" class="form-control" id="inputEmpresaTutorNom" placeholder="Ramon Mas" readonly></input>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputEmpresaTutorEmail" class="col-md-3 col-md-offset-1 control-label">Email del tutor</label>
+											<div class="col-md-4 input-group">
+												<div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+												<input type="text" class="form-control" id="inputEmpresaTutorEmail" placeholder="ramon.mas@uib.es" readonly></input>
+											</div>
+										</div>
+										<br>
+										<div class="form-group">
+											<label for="datePicker" class="col-md-3 col-md-offset-1 control-label">Període de pràctiques</label>
+											<div id="datePicker" class="col-md-7">
+												<label for="from">Desde </label>
+												<input class="dataInput" type="text" id="from" placeholder="16-11-2016" readonly></input>
+												<label for="to"> fins a </label>
+												<input class="dataInput" type="text" id="to" placeholder="26-02-2017" readonly></input>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputAdress" class="col-md-3 col-md-offset-1 control-label">Adreça de les pràctiques</label>
+											<div class="col-md-5">
+												<input type="text" class="form-control" id="inputAdress" placeholder="Carretera Valldemossa" readonly></input>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputPlaces" class="col-md-3 col-md-offset-1 control-label">Places disponibles</label>
+											<div class="col-md-2 col-xs-4 input-group">
+												<div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+									      		<input type="number" class="form-control" id="inputPlaces" placeholder="2" readonly></input>
+										    </div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputHoresTotals" class="col-md-3 col-md-offset-1 control-label">Hores totals</label>
+											<div class="col-md-3 col-xs-4 input-group">
+												<div class="input-group-addon"><span class="glyphicon glyphicon-time"></span></div>
+									      		<input type="number" class="form-control" id="inputHoresTotals" placeholder="300" readonly></input>
+										    </div>
+										</div>
+
+										<div class="form-group">
+											<label for="inputRenumeracio" class="col-md-3 col-md-offset-1 control-label">Renumeració</label>
+											<div class="col-md-3 col-xs-4 input-group">
+												<div class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></div>
+									      		<input type="number" class="form-control" id="inputRenumeracio" placeholder="600" readonly></input>
+										    </div>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset>
+									<legend>Acta entrevista personal</legend>
+									<div class="form-group">
+										<label for="inputDesenvolupament" class="col-md-3 col-md-offset-1 control-label">Desenvolupament de les pràctiques</label>
+										<div class="col-md-7">
+											<textarea id="inputDesenvolupament" class="form-control" rows="3" placeholder="Desenvolupament de les pràctiques" onkeyup="counterChar(this, counterDesenvolupament)"></textarea>
+											<small id="counterDesenvolupament">256</small><small> caràcters</small>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputSatisfacció" class="col-md-3 col-md-offset-1 control-label">Satisfacció de les pràctiques</label>
+										<div class="col-md-7">
+											<textarea id="inputSatisfacció" class="form-control" rows="3" placeholder="Satisfacció de les pràctiques" onkeyup="counterChar(this, counterSatisfacció)"></textarea>
+											<small id="counterSatisfacció">256</small><small> caràcters</small>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputProblemes" class="col-md-3 col-md-offset-1 control-label">Problemes a les pràctiques</label>
+										<div class="col-md-7">
+											<textarea id="inputProblemes" class="form-control" rows="3" placeholder="Problemes a les pràctiques amb el becari" onkeyup="counterChar(this, counterProblemes)"></textarea>
+											<small id="counterProblemes">256</small><small> caràcters</small>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputComentaris" class="col-md-3 col-md-offset-1 control-label">Comentaris opcionals</label>
+										<div class="col-md-7">
+											<textarea id="inputComentaris" class="form-control" rows="3" placeholder="Comentaris opcionals" onkeyup="counterChar(this, counterComentaris)"></textarea>
+											<small id="counterComentaris">256</small><small> caràcters</small>
+										</div>
+									</div>
+								</fieldset>
+
+								<div class="form-group">
+									<div class="col-md-2 col-md-offset-8 col-xs-2 col-xs-offset-8">
+										<button type="submit" class="btn btn-info">
+											<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Finalitzar l'entrevista
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END Panel Crear Conveni -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="nav nav-pills nav-justified">
+							<li><a href="#">Versió 1</a></li>
+				          	<li><a href="#0">© 2016 UIB Convenis</a></li>
+			                <li><a href="#">Terms of Service</a></li>
+			                <li><a href="#">FAQ</a></li>
+				        </ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- END Footer -->
+
+
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	  	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="./entrevista.js"></script>
+	</body>
+</html>

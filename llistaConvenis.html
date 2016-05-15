@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="nofollow">
+		<meta name="author" content="Carlos Marin">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./main.css">
+		<link rel="icon" href="./img/favicon.png">
+		<title>Cap estudis | Llista Convenis </title>
+	</head>
+	<body>
+		<!-- NavBar Header -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+		    	<div class="navbar-header">
+		    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand">UIB Convenis</a>
+					<a href="index.html"><img id="logoNav" src="./img/favicon.png" alt="UIB logo"/></a>
+		    	</div>
+
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Convenis</a></li>
+						<li><a href="#">Empreses</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">Perfil</a></li>
+					</ul>
+
+					<form class="navbar-form navbar-right" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Cercar..."></input>
+						</div>
+						<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Cercar</button>
+					</form>
+
+				</div>
+		  	</div>
+		</nav>
+		<!-- END NavBar Header -->
+
+		<div class="container">
+			<h3>Llista convenis 2016</h3>
+			<h4>Número de convenis total: 28</h4>
+			<div class="row">
+				<h3>Llista de convenis POSITIUS <a id="toggleConvenisPositius" class="small-font">mostrar convenis</a></h3>
+				<div id="convenisPositius">
+					<div class="panel panel-info">
+						<div class="panel-heading">030 - Conveni Enginyer de Software Junior</div>
+						<div class="panel-body">
+							<div class="col-md-4">
+								<ul class="list-unstyled">
+									<li><i class="fa fa-industry" aria-hidden="true"></i> <label>Empresa:</label> <a>UIB</a></li>
+									<li><i class="fa fa-user" aria-hidden="true"></i> <label>Alumne:</label> Carlos Marin Fernandez</li>
+									<li><i class="fa fa-user-md" aria-hidden="true"></i> <label>Tutor:</label> <a>Ramon Mas Sansó</a></li>
+								</ul>
+							</div>
+							<div class="col-md-8">
+								<strong>Conclusió tutor:</strong>
+								<textarea class="form-control" rows="3" placeholder="Ha anat molt be" readonly></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-info">
+						<div class="panel-heading">050 - Conveni Enginyer de Software Junior</div>
+						<div class="panel-body">
+							<div class="col-md-4">
+								<ul class="list-unstyled">
+									<li><i class="fa fa-industry" aria-hidden="true"></i> <label>Empresa:</label> <a>UIB</a></li>
+									<li><i class="fa fa-user" aria-hidden="true"></i> <label>Alumne:</label> Carlos Marin Fernandez</li>
+									<li><i class="fa fa-user-md" aria-hidden="true"></i> <label>Tutor:</label> <a>Ramon Mas Sansó</a></li>
+								</ul>
+							</div>
+							<div class="col-md-8">
+								<strong>Conclusió tutor:</strong>
+								<textarea class="form-control" rows="3" placeholder="Ha anat molt be" readonly></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<h3>Llista de convenis NEGATIUS <a id="toggleConvenisNegatius" class="small-font">mostrar convenis</a></h3>
+				<div id="convenisNegatius">
+					<div class="panel panel-info">
+						<div class="panel-heading">080 - Conveni Enginyer de Software Junior</div>
+						<div class="panel-body">
+							<div class="col-md-4">
+								<ul class="list-unstyled">
+									<li><i class="fa fa-industry" aria-hidden="true"></i> <label>Empresa:</label> <a>UIB</a></li>
+									<li><i class="fa fa-user" aria-hidden="true"></i> <label>Alumne:</label> Carlos Marin Fernandez</li>
+									<li><i class="fa fa-user-md" aria-hidden="true"></i> <label>Tutor:</label> <a>Ramon Mas Sansó</a></li>
+								</ul>
+							</div>
+							<div class="col-md-8">
+								<strong>Conclusió tutor:</strong>
+								<textarea class="form-control" rows="3" placeholder="Ha anat fatal" readonly></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="llistaConvenis.js"></script>
+	</body>
+</html>
