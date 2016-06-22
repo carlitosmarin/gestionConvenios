@@ -1,0 +1,51 @@
+body {
+	background: url(./img/login.jpg);
+	background-size: cover;
+}
+
+#container {
+	max-width: 50vw;
+	max-height: 270px;
+
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0;
+  	margin: auto;
+
+  	box-shadow: 0 10px 20px #AAA;
+  	z-index: 2;
+  	overflow: hidden;
+}
+
+#container div.panel-body {
+	padding: 20px;
+	background-color: #FFF;
+}
+
+#user-type h4>a {
+	font-size: 12px;
+	cursor: pointer;
+}
+
+#user-type form {
+	padding-top: 20px;
+}
+
+#user-password {
+	transition: all 0.5s ease-in-out;
+	display: block;
+	transform: translateX(0);
+}
+
+#user-password.no-selected {
+	transform: translateX(-700px);
+}
+
+#alumne-clau {
+	display: none;
+	transform: translateX(700px);
+	transition: all 0.5s ease-in-out;
+}
+
+#alumne-clau.selected {
+	transform: translateX(0);
+}
